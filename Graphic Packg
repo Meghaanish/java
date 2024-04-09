@@ -1,0 +1,24 @@
+import Graphic.rectangle;
+import Graphic.triangle;
+import Graphic.Square;
+import Graphic.Circle;
+public class TestShape {
+    public static void main(String[] args) {
+
+        rectangle rectangle = new rectangle(5, 3);
+        triangle triangle = new triangle(4, 6);
+        Square square = new Square(4);
+        Circle circle = new Circle(3);
+        System.out.println("Area of Rectangle: " + rectangle.calculateArea());
+        System.out.println("Area of Triangle: " + triangle.calculateArea());
+        System.out.println("Area of Square: " + square.calculateArea());
+        System.out.println("Area of Circle: " + circle.calculateArea());
+
+    }
+}
+
+OUTPUT
+Area of Rectangle: 15.0
+Area of Triangle: 12.0
+Area of Square: 16.0
+Area of Circle: 28.274333882308138
