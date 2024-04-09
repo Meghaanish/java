@@ -1,0 +1,68 @@
+Add.java
+-------
+package Arithmetic;
+public class Add
+{
+    public int sum(int x,int y)
+    {
+        return x+y;
+    }
+}
+
+Mult.java
+---------
+package Arithmetic;
+public class Mult
+{
+    public int Product(int x,int y)
+    {
+        return x*y;
+    }
+}
+
+Div.java
+--------
+package Arithmetic;
+public class div
+{
+    public double Quotient(int x,int y)
+    {
+        return x/y;
+    }
+}
+
+Subtrtact.java
+--------------
+package Arithmetic;
+public class Subtract
+{
+    public int diff(int x,int y)
+    {
+        return x-y;
+    }
+}
+
+Operations.java
+--------------
+import Arithmetic.*;
+class operations
+{
+    public static void main(String[] args) {
+        Add ob1 = new Add();
+        Subtract ob2 = new Subtract();
+        Mult ob3 = new Mult();
+        div ob4 = new div();
+        System.out.println(ob1.sum(4,3));
+        System.out.println(ob2.diff(4,3));
+        System.out.println(ob3.Product(4,3));
+        System.out.println(ob4.Quotient(4,3));
+
+    }
+}
+
+OUTPUT
+
+7
+1
+12
+1.0
