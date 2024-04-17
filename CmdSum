@@ -1,0 +1,28 @@
+class cmdSum{
+    public static void main(String arg[]){
+    int sum=0;
+    int invalid=0;
+    int num=0;
+    for(int i=0;i<arg.length;i++){
+    try {
+    num=Integer.parseInt(arg[i]);
+    sum=num+sum;
+    }
+    catch(NumberFormatException e){
+    invalid=invalid+1;
+    }
+    }
+    System.out.println("sum = " + sum);
+    System.out.println("invalid integers = " + invalid);
+    }
+   }
+
+OUTPUT
+The Average of the numbers is: 5.0
+PS C:\Users\mlm\Desktop\java_lab> javac cmdSum.java
+PS C:\Users\mlm\Desktop\java_lab> java cmdSum
+sum = 0
+invalid integers = 0
+PS C:\Users\mlm\Desktop\java_lab> java cmdSum 5 6 7
+sum = 18
+invalid integers = 0
